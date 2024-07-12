@@ -1,0 +1,227 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background: linear-gradient(-45deg, #23a6d5, #9876ff, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    color: #edf2f4;
+    min-height: 100vh;
+}
+
+
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+header {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 15px 20px;
+    cursor: pointer;
+    color: #edf2f4;
+    font-weight: bold;
+}
+
+nav ul li:hover, nav ul li.active {
+    background: #1DAACD;
+    border-radius: 8px;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    max-width: 1000px;
+    width: 90%;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+label {
+    margin: 5px;
+}
+
+select {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    margin-top: 10px;
+    margin-bottom: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background: #ef233c;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background: #d90429;
+}
+
+#scale-container {
+    margin-top: 20px;
+    margin-left: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mastil {
+    display: grid;
+    grid-template-rows: repeat(6, 40px); /* Reduce el ancho del mástil */
+    gap: 2px; /* Espacio entre cuerdas */
+    justify-content: center;
+}
+
+.string {
+    display: grid;
+    grid-template-columns: auto repeat(23, 40px); /* Primera columna para cuerda al aire, 23 trastes */
+    position: relative;
+}
+
+.fret, .open-string {
+    width: 40px; /* Ancho fijo */
+    height: 40px; /* Alto fijo */
+    border-left: 1px solid #edf2f4;
+    border-right: 1px solid #edf2f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.open-string {
+    border: none; /* Sin borde para cuerda al aire */
+    background: none; /* Fondo transparente */
+}
+
+.string .fret::before, .string .open-string::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2.5px;  /* Grosor de la cuerda */
+    background: silver;  /* Color de la cuerda, gris claro */
+    z-index: 1;
+    transform: translateY(-50%);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);  /* Sombra arriba y abajo */
+}
+
+
+.note, .note-blue {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    z-index: 2; /* Colocar las notas por encima de las cuerdas */
+}
+
+.note {
+    background-color: #708090;
+    color: white;
+}
+
+.note-blue {
+    background-color: #1E90FF;
+    color: white;
+}
+
+.fret-number {
+    position: absolute;
+    top: -25px;
+    font-size: 12px;
+    color: #edf2f4;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Specific styles for the Metronome container */
+#metronome-container .controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#metronome-container input[type="number"] {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    width: 80px;
+}
+
+#metronome-container button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background: #ef233c;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#metronome-container button:hover {
+    background: #d90429;
+}
+
+img{
+
+    width: 70%;
+}

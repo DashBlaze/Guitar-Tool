@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Tools</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="tabs">
+                <li class="tab" id="tab-scale-generator">Scale Generator</li>
+                <li class="tab" id="tab-circle-of-fifths">Circle of Fifths</li>
+                <li class="tab" id="tab-metronome">Metronome</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container" id="scale-generator-container">
+        <h1>Scale Generator</h1>
+        <div class="controls">
+            <label for="scale">Scale:</label>
+            <select id="scale">
+                <optgroup label="Greek Modes">
+                    <option value="ionian">Ionian (Major Scale)</option>
+                    <option value="dorian">Dorian</option>
+                    <option value="phrygian">Phrygian</option>
+                    <option value="lydian">Lydian</option>
+                    <option value="mixolydian">Mixolydian</option>
+                    <option value="aeolian">Aeolian (Minor Scale)</option>
+                    <option value="locrian">Locrian</option>
+                </optgroup>
+                <optgroup label="Pentatonic">
+                    <option value="pentatonic_major">Major Pentatonic</option>
+                    <option value="pentatonic_minor">Minor Pentatonic</option>
+                    <option value="blues">Blues</option>
+                </optgroup>
+                <optgroup label="Other Scales">                 
+                    <option value="hirajoshi">Hirajoshi</option>
+                    <option value="kumoi">Kumoi</option>
+                    <option value="melodic_minor">Melodic Minor</option>
+                    <option value="harmonic_minor">Harmonic Minor</option>
+                    <option value="major_bebop">Major Bebop</option>
+                    <option value="minor_bebop">Minor Bebop</option>
+                    <option value="japanese_insen">Japanese Insen</option>
+                </optgroup>
+            </select>
+
+            <label for="key">Key:</label>
+            <select id="key">
+                <option value="A">A</option>
+                <option value="A#">A# / Bb</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="C#">C# / Db</option>
+                <option value="D">D</option>
+                <option value="D#">D# / Eb</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="F#">F# / Gb</option>
+                <option value="G">G</option>
+                <option value="G#">G# / Ab</option>
+            </select>
+
+            <button onclick="generateScale()">Generate Scale</button>
+        </div>
+        <div id="scale-container"></div>
+    </div>
+    
+    <div class="container" id="circle-of-fifths-container" style="display:none;">
+        <h1>Circle of Fifths</h1>
+        <img src="media/circle.png" alt="Circle of Fifths">
+    </div>
+    
+    <div class="container" id="metronome-container" style="display:none;">
+        <h1>Metronome</h1>
+        <div class="controls">
+            <label for="tempo">Tempo (BPM):</label>
+            <input type="number" id="tempo" min="30" max="240" value="120">
+            <button onclick="startMetronome()">Start</button>
+            <button onclick="stopMetronome()">Stop</button>
+        </div>
+        <div id="metronome-status"></div>
+        <audio id="tick-sound" src="media/tick.mp3" preload="auto"></audio>
+    </div>
+
+    <footer>
+        <p>Created by Joshua Gonzalez</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
