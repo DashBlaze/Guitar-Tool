@@ -11,11 +11,21 @@ El proyecto consta de los siguientes archivos principales:
 
 ## Instalación
 
+Puedes utilizar esta aplicación de dos formas: localmente o mediante el despliegue en GitHub Pages.
+
+### Uso Local
+
 Para instalar y utilizar esta aplicación en tu máquina local, sigue estos pasos:
 
 1. Clona el repositorio en tu máquina local.
 2. Asegúrate de tener los archivos `index.html`, `styles.css` y `script.js`.
 3. Abre el archivo `index.html` en tu navegador web preferido.
+
+### Uso en GitHub Pages
+
+La herramienta ya ha sido desplegada en GitHub Pages. Puedes acceder a ella utilizando el siguiente enlace:
+
+[Guitar Tools en GitHub Pages](https://dashblaze.github.io/Guitar-Tool/)
 
 ## Uso
 
