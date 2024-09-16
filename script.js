@@ -43,6 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
 const notes = ['A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#'];
 
 const scalePatterns = {
+    // Patrones ya existentes (correctos)
     ionian: [2, 2, 1, 2, 2, 2, 1], // Ionian (Major)
     dorian: [2, 1, 2, 2, 2, 1, 2], // Dorian
     phrygian: [1, 2, 2, 2, 1, 2, 2], // Phrygian
@@ -53,14 +54,41 @@ const scalePatterns = {
     pentatonic_major: [2, 2, 3, 2, 3], // Major Pentatonic
     pentatonic_minor: [3, 2, 2, 3, 2], // Minor Pentatonic
     blues: [3, 2, 1, 1, 3, 2], // Blues
-    hirajoshi: [2, 1, 4, 1, 4], // Hirajoshi
-    kumoi: [2, 1, 4, 2, 3], // Kumoi
+    hirajoshi: [2, 1, 4, 1], // Hirajoshi
+    kumoi: [2, 1, 4, 2], // Kumoi
+    japanese_insen: [1, 4, 2, 1, 4], // Japanese Insen
     melodic_minor: [2, 1, 2, 2, 2, 2, 1], // Melodic Minor
+    harmonic_major: [2, 2, 1, 2, 1, 3, 1], // Harmonic Major
     harmonic_minor: [2, 1, 2, 2, 1, 3, 1], // Harmonic Minor
-    major_bebop: [2, 2, 1, 2, 1, 1, 2, 1], // Major Bebop
-    minor_bebop: [2, 1, 2, 2, 1, 2, 1, 1], // Minor Bebop
-    japanese_insen: [1, 4, 2, 1, 4] // Japanese Insen
+    hungarian_major: [3, 1, 2, 1, 2, 1], // Hungarian Major   
+    hungarian_minor: [2, 1, 3, 1, 1, 3, 1], // Hungarian Minor 
+    neapolitan_minor: [1, 2, 2, 2, 1, 3], // Neapolitan Minor
+    neapolitan_major: [1, 2, 2, 2, 2, 2], // Neapolitan Major
+    major_bebop: [2, 2, 1, 2, 1, 1, 2, 1], // Bebop Major
+    minor_bebop: [2, 1, 2, 2, 1, 2, 1, 1], // Bebop Minor
+    bebop_dominant: [2, 2, 1, 2, 1, 1, 2, 1], // Bebop Dominant
+    bebop_locrian: [2, 1, 2, 1, 2, 2, 1, 1], // Bebop Locrian ♮2 
+    bebop_dorian: [2, 1, 2, 2, 2, 1, 1, 1], // Bebop Dorian
+    enigmatic: [1, 3, 2, 2, 2, 1, 1], // Enigmatic
+    enigmatic_minor: [1, 2, 3, 1, 3, 1], // Enigmatic Minor
+    persian: [1, 3, 1, 1, 2, 3], // Persian
+    whole_tone: [2, 2, 2, 2, 2, 2], // Whole Tone
+    ionian_flat5: [2, 2, 1, 1, 3, 2], // Ionian ♭5
+    locrian_7: [1, 2, 2, 1, 2, 3], // Locrian ♮7
+    pelog: [1, 2, 1, 3, 1], // Pelog
+    dominant_sus: [2, 3, 2, 2, 1], // Dominant Sus
+    composite_ii: [1, 3, 2, 1, 1, 3], // Composite II
+    eight_tone_spanish: [1, 2, 1, 1, 1, 2, 2], // 8-Tone Spanish
+    augmented: [3, 1, 3, 1, 3], // Augmented
+    diminished: [2, 1, 2, 1, 2, 1, 2], // Diminished
+    hindu: [2, 2, 1, 2, 1, 2, 2], // hindu
+  
 };
+
+
+
+
+
 
 // Relative indices for the blue notes in the Blues scale
 const blueNoteIntervalsBlues = [6];  // Diminished fifth in the Blues scale
