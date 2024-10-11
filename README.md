@@ -38,7 +38,7 @@ La herramienta ya ha sido desplegada en GitHub Pages. Puedes acceder a ella util
 4. La sección correspondiente mostrará la escala seleccionada en el mástil de la guitarra.
 
 ### Círculo de Quintas
-![Screenshot 2024-10-11 090139](https://github.com/user-attachments/assets/a858bc27-477b-445f-a6d6-e5f2608b5ad7)
+![image](https://github.com/user-attachments/assets/74767507-de98-488d-a307-b20a1e940a5b)
 
 1. Navega a la pestaña "Circle of Fifths".
 2. Podrás visualizar una imagen del Círculo de Quintas.
