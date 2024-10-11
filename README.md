@@ -30,6 +30,7 @@ La herramienta ya ha sido desplegada en GitHub Pages. Puedes acceder a ella util
 ## Uso
 
 ### Generador de Escalas
+![Screenshot 2024-10-11 090131](https://github.com/user-attachments/assets/8715ea11-c43b-42d2-85b1-f4895bfd23c0)
 
 1. Selecciona una escala en el menú desplegable "Scale".
 2. Selecciona una tonalidad en el menú desplegable "Key".
@@ -37,11 +38,13 @@ La herramienta ya ha sido desplegada en GitHub Pages. Puedes acceder a ella util
 4. La sección correspondiente mostrará la escala seleccionada en el mástil de la guitarra.
 
 ### Círculo de Quintas
+![Screenshot 2024-10-11 090139](https://github.com/user-attachments/assets/a858bc27-477b-445f-a6d6-e5f2608b5ad7)
 
 1. Navega a la pestaña "Circle of Fifths".
 2. Podrás visualizar una imagen del Círculo de Quintas.
 
 ### Metrónomo
+![Screenshot 2024-10-11 090146](https://github.com/user-attachments/assets/d63da55b-b93b-441b-b348-4176c6300cc3)
 
 1. Navega a la pestaña "Metronome".
 2. Configura el tempo en BPM utilizando el campo numérico.
